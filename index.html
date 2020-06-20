@@ -1,76 +1,141 @@
-<html><head><title>Miray's Website Main Page</title>
-<link href="https://mirayxs.github.io/MirayCDN/CSS/wrapper.css" rel="stylesheet">
-<link rel="stylesheet" href="https://mirayxs.github.io/MirayCDN/CSS/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-<style>    @font-face { font-family: Ubuntu-Medium; src: url(https://mirayxs.github.io/MirayCDN/fonts/Ubuntu-Medium.ttf);}@font-face {    font-family: Ubuntu-Regular;    src: url(https://mirayxs.github.io/MirayCDN/fonts/Ubuntu-Regular.ttf);}@font-face {    font-family: Ubuntu-Light;    src: url(https://mirayxs.github.io/MirayCDN/fonts/Ubuntu-Light.ttf);}body {    background-color: #232327;}h1 {  color: #E1E1E1;  font-size: 100px;  font-family:Ubuntu-Medium;  text-align: center;}h2 {    font-family: Ubuntu-Regular;    color: #E1E1E1 !important;}h3 {    font-family: Ubuntu-Light;    color: #7289da !important;    font-size: 150%}</style>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#7289da">
+    <meta property="og:title" content="Miray's Website">
+    <meta property="og:site_name" content="mirayxs.github.io">
+    <meta property="og:url" content="https://mirayxs.github.io">
+    <meta property="og:secure_url" content="https://mirayxs.github.io">
+    <meta property="og:description" content="Miray's Website Main Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MirayXS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="https://avatars2.githubusercontent.com/u/55494819?v=4" type="image/png"></head>
 
-<style>
-    body{
-        height: 500px;
-  width: 100%;
-    }
-</style>
-<meta name="theme-color" content="#7289da">
-<meta property="og:title" content="Miray's Website">
-<meta property="og:site_name" content="mirayxs.github.io">
-<meta property="og:url" content="https://mirayxs.github.io">
-<meta property="og:secure_url" content="https://mirayxs.github.io">
-<meta property="og:description" content="Miray's Website Main Page">
-<style type="text/css" id="notify-bootstrap">.notifyjs-bootstrap-base {
-	font-weight: bold;
-	padding: 8px 15px 8px 14px;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-	background-color: #fcf8e3;
-	border: 1px solid #fbeed5;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	white-space: nowrap;
-	padding-left: 25px;
-	background-repeat: no-repeat;
-	background-position: 3px 7px;
-}
-.notifyjs-bootstrap-error {
-	color: #B94A48;
-	background-color: #F2DEDE;
-	border-color: #EED3D7;
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAtRJREFUeNqkVc1u00AQHq+dOD+0poIQfkIjalW0SEGqRMuRnHos3DjwAH0ArlyQeANOOSMeAA5VjyBxKBQhgSpVUKKQNGloFdw4cWw2jtfMOna6JOUArDTazXi/b3dm55socPqQhFka++aHBsI8GsopRJERNFlY88FCEk9Yiwf8RhgRyaHFQpPHCDmZG5oX2ui2yilkcTT1AcDsbYC1NMAyOi7zTX2Agx7A9luAl88BauiiQ/cJaZQfIpAlngDcvZZMrl8vFPK5+XktrWlx3/ehZ5r9+t6e+WVnp1pxnNIjgBe4/6dAysQc8dsmHwPcW9C0h3fW1hans1ltwJhy0GxK7XZbUlMp5Ww2eyan6+ft/f2FAqXGK4CvQk5HueFz7D6GOZtIrK+srupdx1GRBBqNBtzc2AiMr7nPplRdKhb1q6q6zjFhrklEFOUutoQ50xcX86ZlqaZpQrfbBdu2R6/G19zX6XSgh6RX5ubyHCM8nqSID6ICrGiZjGYYxojEsiw4PDwMSL5VKsC8Yf4VRYFzMzMaxwjlJSlCyAQ9l0CW44PBADzXhe7xMdi9HtTrdYjFYkDQL0cn4Xdq2/EAE+InCnvADTf2eah4Sx9vExQjkqXT6aAERICMewd/UAp/IeYANM2joxt+q5VI+ieq2i0Wg3l6DNzHwTERPgo1ko7XBXj3vdlsT2F+UuhIhYkp7u7CarkcrFOCtR3H5JiwbAIeImjT/YQKKBtGjRFCU5IUgFRe7fF4cCNVIPMYo3VKqxwjyNAXNepuopyqnld602qVsfRpEkkz+GFL1wPj6ySXBpJtWVa5xlhpcyhBNwpZHmtX8AGgfIExo0ZpzkWVTBGiXCSEaHh62/PoR0p/vHaczxXGnj4bSo+G78lELU80h1uogBwWLf5YlsPmgDEd4M236xjm+8nm4IuE/9u+/PH2JXZfbwz4zw1WbO+SQPpXfwG/BBgAhCNZiSb/pOQAAAAASUVORK5CYII=);
-}
-.notifyjs-bootstrap-success {
-	color: #468847;
-	background-color: #DFF0D8;
-	border-color: #D6E9C6;
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAutJREFUeNq0lctPE0Ecx38zu/RFS1EryqtgJFA08YCiMZIAQQ4eRG8eDGdPJiYeTIwHTfwPiAcvXIwXLwoXPaDxkWgQ6islKlJLSQWLUraPLTv7Gme32zoF9KSTfLO7v53vZ3d/M7/fIth+IO6INt2jjoA7bjHCJoAlzCRw59YwHYjBnfMPqAKWQYKjGkfCJqAF0xwZjipQtA3MxeSG87VhOOYegVrUCy7UZM9S6TLIdAamySTclZdYhFhRHloGYg7mgZv1Zzztvgud7V1tbQ2twYA34LJmF4p5dXF1KTufnE+SxeJtuCZNsLDCQU0+RyKTF27Unw101l8e6hns3u0PBalORVVVkcaEKBJDgV3+cGM4tKKmI+ohlIGnygKX00rSBfszz/n2uXv81wd6+rt1orsZCHRdr1Imk2F2Kob3hutSxW8thsd8AXNaln9D7CTfA6O+0UgkMuwVvEFFUbbAcrkcTA8+AtOk8E6KiQiDmMFSDqZItAzEVQviRkdDdaFgPp8HSZKAEAL5Qh7Sq2lIJBJwv2scUqkUnKoZgNhcDKhKg5aH+1IkcouCAdFGAQsuWZYhOjwFHQ96oagWgRoUov1T9kRBEODAwxM2QtEUl+Wp+Ln9VRo6BcMw4ErHRYjH4/B26AlQoQQTRdHWwcd9AH57+UAXddvDD37DmrBBV34WfqiXPl61g+vr6xA9zsGeM9gOdsNXkgpEtTwVvwOklXLKm6+/p5ezwk4B+j6droBs2CsGa/gNs6RIxazl4Tc25mpTgw/apPR1LYlNRFAzgsOxkyXYLIM1V8NMwyAkJSctD1eGVKiq5wWjSPdjmeTkiKvVW4f2YPHWl3GAVq6ymcyCTgovM3FzyRiDe2TaKcEKsLpJvNHjZgPNqEtyi6mZIm4SRFyLMUsONSSdkPeFtY1n0mczoY3BHTLhwPRy9/lzcziCw9ACI+yql0VLzcGAZbYSM5CCSZg1/9oc/nn7+i8N9p/8An4JMADxhH+xHfuiKwAAAABJRU5ErkJggg==);
-}
-.notifyjs-bootstrap-info {
-	color: #3A87AD;
-	background-color: #D9EDF7;
-	border-color: #BCE8F1;
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYFAhkSsdes/QAAA8dJREFUOMvVlGtMW2UYx//POaWHXg6lLaW0ypAtw1UCgbniNOLcVOLmAjHZolOYlxmTGXVZdAnRfXQm+7SoU4mXaOaiZsEpC9FkiQs6Z6bdCnNYruM6KNBw6YWewzl9z+sHImEWv+vz7XmT95f/+3/+7wP814v+efDOV3/SoX3lHAA+6ODeUFfMfjOWMADgdk+eEKz0pF7aQdMAcOKLLjrcVMVX3xdWN29/GhYP7SvnP0cWfS8caSkfHZsPE9Fgnt02JNutQ0QYHB2dDz9/pKX8QjjuO9xUxd/66HdxTeCHZ3rojQObGQBcuNjfplkD3b19Y/6MrimSaKgSMmpGU5WevmE/swa6Oy73tQHA0Rdr2Mmv/6A1n9w9suQ7097Z9lM4FlTgTDrzZTu4StXVfpiI48rVcUDM5cmEksrFnHxfpTtU/3BFQzCQF/2bYVoNbH7zmItbSoMj40JSzmMyX5qDvriA7QdrIIpA+3cdsMpu0nXI8cV0MtKXCPZev+gCEM1S2NHPvWfP/hL+7FSr3+0p5RBEyhEN5JCKYr8XnASMT0xBNyzQGQeI8fjsGD39RMPk7se2bd5ZtTyoFYXftF6y37gx7NeUtJJOTFlAHDZLDuILU3j3+H5oOrD3yWbIztugaAzgnBKJuBLpGfQrS8wO4FZgV+c1IxaLgWVU0tMLEETCos4xMzEIv9cJXQcyagIwigDGwJgOAtHAwAhisQUjy0ORGERiELgG4iakkzo4MYAxcM5hAMi1WWG1yYCJIcMUaBkVRLdGeSU2995TLWzcUAzONJ7J6FBVBYIggMzmFbvdBV44Corg8vjhzC+EJEl8U1kJtgYrhCzgc/vvTwXKSib1paRFVRVORDAJAsw5FuTaJEhWM2SHB3mOAlhkNxwuLzeJsGwqWzf5TFNdKgtY5qHp6ZFf67Y/sAVadCaVY5YACDDb3Oi4NIjLnWMw2QthCBIsVhsUTU9tvXsjeq9+X1d75/KEs4LNOfcdf/+HthMnvwxOD0wmHaXr7ZItn2wuH2SnBzbZAbPJwpPx+VQuzcm7dgRCB57a1uBzUDRL4bfnI0RE0eaXd9W89mpjqHZnUI5Hh2l2dkZZUhOqpi2qSmpOmZ64Tuu9qlz/SEXo6MEHa3wOip46F1n7633eekV8ds8Wxjn37Wl63VVa+ej5oeEZ/82ZBETJjpJ1Rbij2D3Z/1trXUvLsblCK0XfOx0SX2kMsn9dX+d+7Kf6h8o4AIykuffjT8L20LU+w4AZd5VvEPY+XpWqLV327HR7DzXuDnD8r+ovkBehJ8i+y8YAAAAASUVORK5CYII=);
-}
-.notifyjs-bootstrap-warn {
-	color: #C09853;
-	background-color: #FCF8E3;
-	border-color: #FBEED5;
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAABJlBMVEXr6eb/2oD/wi7/xjr/0mP/ykf/tQD/vBj/3o7/uQ//vyL/twebhgD/4pzX1K3z8e349vK6tHCilCWbiQymn0jGworr6dXQza3HxcKkn1vWvV/5uRfk4dXZ1bD18+/52YebiAmyr5S9mhCzrWq5t6ufjRH54aLs0oS+qD751XqPhAybhwXsujG3sm+Zk0PTwG6Shg+PhhObhwOPgQL4zV2nlyrf27uLfgCPhRHu7OmLgAafkyiWkD3l49ibiAfTs0C+lgCniwD4sgDJxqOilzDWowWFfAH08uebig6qpFHBvH/aw26FfQTQzsvy8OyEfz20r3jAvaKbhgG9q0nc2LbZxXanoUu/u5WSggCtp1anpJKdmFz/zlX/1nGJiYmuq5Dx7+sAAADoPUZSAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfdBgUBGhh4aah5AAAAlklEQVQY02NgoBIIE8EUcwn1FkIXM1Tj5dDUQhPU502Mi7XXQxGz5uVIjGOJUUUW81HnYEyMi2HVcUOICQZzMMYmxrEyMylJwgUt5BljWRLjmJm4pI1hYp5SQLGYxDgmLnZOVxuooClIDKgXKMbN5ggV1ACLJcaBxNgcoiGCBiZwdWxOETBDrTyEFey0jYJ4eHjMGWgEAIpRFRCUt08qAAAAAElFTkSuQmCC);
-}
-</style></head>
-<h1>Miray's Website Main Page</h1>
-<div class="wrapper"><ul><li><h2><a class="acnhsave" href="https://mirayxs.github.io/ACNHSave">ACNHSave</a></h2><h3><p>Animal Crossing: New Horizons Saves Archive <a href="https://github.com/MirayXS/ACNHSave">
-    <img src="https://img.shields.io/badge/GITHUB-555?style=for-the-badge&amp;logo=github" alt="GitHub">
-</a></p></h3><p></p></li>
-<li><h2><a class="splathex" href="https://mirayxs.github.io/SplatHeX">SplatHeX</a></h2><h3><p>Splatoon 2 Datamine <a href="https://github.com/MirayXS/SplatHeX">
-    <img src="https://img.shields.io/badge/GITHUB-555?style=for-the-badge&amp;logo=github" alt="GitHub">
-</a></p>
-</h3></li>
-<li><h2><a class="imagezip" href="https://mirayxs.github.io/ACNH-IMAGEZIP">ACNH-IMAGEZIP</a></h2><h3><p>Animal Crossing: New Horizons Images <a href="https://github.com/MirayXS/ACNH-IMAGEZIP">
-    <img src="https://img.shields.io/badge/GITHUB-555?style=for-the-badge&amp;logo=github" alt="GitHub">
-</a></p></h3><p></p></li>
+  <body>
+    <div id="loading" class="" style="display: none;">
+      <div id="spinner"></div>
+    </div>
+    <div id="profile">
+      <div id="profile_img" style="background: url(https://avatars2.githubusercontent.com/u/55494819?v=4) center;"></div>
+      <div id="username"><span style="display:block;">Miray</span><a href="https://github.com/MirayXS">@MirayXS</a></div>
+      <div id="userbio" style="display: block;">Discord: XxMirayxX21#3561</div>
+      <div id="about">
+                <span style="display:none;"><i class="fas fa-users"></i> &nbsp; null</span>
+                <span style="display:none;"><i class="fas fa-envelope"></i> &nbsp; null</span>
+                <span style="display:block;"><i class="fas fa-link"></i> &nbsp; <a href="mirayxs.github.io">mirayxs.github.io</a></span>
+                <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Italy</span>
+                <span style="display:none;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Available for hire</span>
+                <div class="socials">
+                <span style="display:none !important;"><a href="https://www.twitter.com/null" target="_blank" class="socials"><i class="fab fa-twitter"></i></a></span>
+                <span style="display:none !important;"><a href="https://www.dribbble.com/null" target="_blank" class="socials"><i class="fab fa-dribbble"></i></a></span>
+                <span style="display:none !important;"><a href="https://www.linkedin.com/in/null/" target="_blank" class="socials"><i class="fab fa-linkedin-in"></i></a></span>
+                <span style="display:none !important;"><a href="https://www.medium.com/@null/" target="_blank" class="socials"><i class="fab fa-medium-m"></i></a></span>
+                </div>
+                </div>
+    </div>
+    <div id="display">
+      <div id="work">
+        <h1>Work.</h1>
+        <div class="projects" id="work_section" style="position: relative; height: 1504.18px;">
+                        <a href="https://mirayxs.github.io/ACNHSave" target="_blank" style="position: absolute; transform: translate(21px, 0px);">
+                        <section>
+                            <div class="section_title">ACNHSave</div>
+                            <div class="about_section">
+                            <span style="display:block;">Animal Crossing: New Horizons Saves Archive</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://mirayxs.github.io/SplatHeX" target="_blank" style="position: absolute; transform: translate(319.863px, 0px);">
+                        <section>
+                            <div class="section_title">SplatHeX</div>
+                            <div class="about_section">
+                            <span style="display:block;">Splatoon 2 Datamine</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://mirayxs.github.io/ACNH-IMAGEZIP" target="_blank" style="position: absolute; transform: translate(21px, 224.425px);">
+                        <section>
+                            <div class="section_title">ACNH - IMAGEZIP</div>
+                            <div class="about_section">
+                            <span style="display:block;">Animal Crossing: New Horizons Images</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://mirayxs.github.io/MirayStation" target="_blank" style="position: absolute; transform: translate(319.863px, 209.625px);">
+                        <section>
+                            <div class="section_title">MirayStation</div>
+                            <div class="about_section">
+                            <span style="display:block;">Images, Memes And Redirects</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://mirayxs.github.io/ACNHToday" target="_blank" style="position: absolute; transform: translate(319.863px, 419.25px);">
+                        <section>
+                            <div class="section_title">ACNHToday</div>
+                            <div class="about_section">
+                            <span style="display:block;">Today's Events in Animal Crossing</span>
+                            </div>
+                        </section>
+                        </a>
+      </div>
+      
+    </div>
+    <script type="text/javascript">
+      setTimeout(function() {
+        document.getElementById("loading").classList.add("animated");
+        document.getElementById("loading").classList.add("fadeOut");
+        setTimeout(function() {
+          document.getElementById("loading").classList.remove("animated");
+          document.getElementById("loading").classList.remove("fadeOut");
+          document.getElementById("loading").style.display = "none";
+        }, 800);
+      }, 1500);
+      $.getJSON("blog.json", function(blog) {
+        blog = blog || [];
+        if (blog.length == 0) {
+          return (document.getElementById("blog_section").style.display =
+            "none");
+        }
+        for (var i = 0; i < blog.length; i++) {
+          $("#blogs").append(`
+            <a href="./blog/${blog[i].url_title}/" target="_blank">
+                <section>
+                    <img src="./blog/${blog[i].url_title}/${blog[i].top_image}">
+                    <div class="blog_container">
+                        <div class="section_title">${blog[i].title}</div>
+                        <div class="about_section">
+                            ${blog[i].sub_title}
+                        </div>
+                    </div>
+                </section>
+            </a>
+            `);
+        }
+      }).fail(function() {
+        return (document.getElementById("blog_section").style.display = "none");
+      });
+    </script>
 
+    <script>
+      const magicProjectsGrid = new MagicGrid({
+        container: "#work_section",
+        animate: false,
+        gutter: 30, // default gutter size
+        static: true,
+        useMin: false,
+        maxColumns: 2,
+        useTransform: true
+      });
 
-<li><h2><a class="station" href="https://mirayxs.github.io/MirayStation">MirayStation</a></h2><h3><p>Images, Memes And Redirects <a href="https://github.com/MirayXS/MirayStation">
-    <img src="https://img.shields.io/badge/GITHUB-555?style=for-the-badge&amp;logo=github" alt="GitHub">
-</a></p></h3><p></p></li><li><h2><a class="station" href="https://mirayxs.github.io/ACNHToday">ACNHToday</a></h2><h3><p>Today's Events in Animal Crossing<a href="https://github.com/MirayXS/ACNHToday">
-    <img src="https://img.shields.io/badge/GITHUB-555?style=for-the-badge&amp;logo=github" alt="GitHub">
-</a></p></h3><p></p></li></ul></div>
+      $("document").ready(() => {
+        magicProjectsGrid.listen();
+      });
+    </script>
+  
 
 </body></html>
