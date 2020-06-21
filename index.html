@@ -17,9 +17,7 @@
   <link rel="icon" href="https://avatars2.githubusercontent.com/u/55494819?v=4" type="image/png"></head>
 
   <body>
-    <div id="loading" class="" style="display: none;">
-      <div id="spinner"></div>
-    </div>
+    
     <div id="profile">
       <div id="profile_img" style="background: url(https://avatars2.githubusercontent.com/u/55494819?v=4) center;"></div>
       <div id="username"><span style="display:block;">Miray</span><a href="https://github.com/MirayXS">@MirayXS</a></div>
@@ -41,7 +39,7 @@
     <div id="display">
       <div id="work">
         <h1>Work.</h1>
-        <div class="projects" id="work_section" style="position: relative; height: 1504.18px;">
+        <div class="projects" id="work_section" style="position: relative; height: 356.725px;">
                         <a href="https://mirayxs.github.io/ACNHSave" target="_blank" style="position: absolute; transform: translate(21px, 0px);">
                         <section>
                             <div class="section_title">ACNHSave</div>
@@ -58,7 +56,7 @@
                             </div>
                         </section>
                         </a>
-                        <a href="https://mirayxs.github.io/ACNH-IMAGEZIP" target="_blank" style="position: absolute; transform: translate(21px, 224.425px);">
+                        <a href="https://mirayxs.github.io/ACNH-IMAGEZIP" target="_blank" style="position: absolute; transform: translate(21px, 193.363px);">
                         <section>
                             <div class="section_title">ACNH - IMAGEZIP</div>
                             <div class="about_section">
@@ -66,7 +64,7 @@
                             </div>
                         </section>
                         </a>
-                        <a href="https://mirayxs.github.io/ACNHToday" target="_blank" style="position: absolute; transform: translate(319.863px, 419.25px);">
+                        <a href="https://mirayxs.github.io/ACNHToday" target="_blank" style="position: absolute; transform: translate(319.863px, 174.963px);">
                         <section>
                             <div class="section_title">ACNHToday</div>
                             <div class="about_section">
@@ -77,41 +75,12 @@
       </div>
       
     </div>
-    <script type="text/javascript">
-      setTimeout(function() {
-        document.getElementById("loading").classList.add("animated");
-        document.getElementById("loading").classList.add("fadeOut");
-        setTimeout(function() {
-          document.getElementById("loading").classList.remove("animated");
-          document.getElementById("loading").classList.remove("fadeOut");
-          document.getElementById("loading").style.display = "none";
-        }, 800);
-      }, 1500);
-      $.getJSON("blog.json", function(blog) {
-        blog = blog || [];
-        if (blog.length == 0) {
-          return (document.getElementById("blog_section").style.display =
-            "none");
-        }
-        for (var i = 0; i < blog.length; i++) {
-          $("#blogs").append(`
-            <a href="./blog/${blog[i].url_title}/" target="_blank">
-                <section>
-                    <img src="./blog/${blog[i].url_title}/${blog[i].top_image}">
-                    <div class="blog_container">
-                        <div class="section_title">${blog[i].title}</div>
-                        <div class="about_section">
-                            ${blog[i].sub_title}
-                        </div>
-                    </div>
-                </section>
-            </a>
-            `);
-        }
-      }).fail(function() {
-        return (document.getElementById("blog_section").style.display = "none");
-      });
-    </script>
+<div id="footer">
+        <a href="https://github.com/imfunniee/gitfolio">
+    <img src="https://img.shields.io/badge/MADE%20WITH-gitfolio-24292e?style=for-the-badge&amp;logo=GITHUB" alt="made with gitfolio">
+           </a>
+      </div>
+    
 
     <script>
       const magicProjectsGrid = new MagicGrid({
@@ -130,4 +99,5 @@
     </script>
   
 
-</body></html>
+
+</div></body></html>
