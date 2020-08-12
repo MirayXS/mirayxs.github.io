@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/mirayxs
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://mirayxs.github.io
+  * I am mirayxs (https://keybase.io/mirayxs) on keybase.
+  * I have a public key ASCVQ_6Dg6XQbFqW7QkIzqE3xWDrfs03rHMMoV3q3towJQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01209543fe8383a5d06c5a96ed0908cea137c560eb7ecd37ac730ca15deadeda30250a",
+      "host": "keybase.io",
+      "kid": "01209543fe8383a5d06c5a96ed0908cea137c560eb7ecd37ac730ca15deadeda30250a",
+      "uid": "f41b12e103c0925a31c221eb11126a19",
+      "username": "mirayxs"
+    },
+    "merkle_root": {
+      "ctime": 1597262884,
+      "hash": "691669d4274d83ca917a77eb25add8b1365212ad6d0e24fbbf5652ee00d4e16b700de176988b4d27ba2fea1a3a7119b1a10489c5f3ed47377fcf5262d74b062f",
+      "hash_meta": "f81e61e8768f518eadbb93c99471aa9b042899ee5c9012690ffd1afc4aaa2fdb",
+      "seqno": 17263065
+    },
+    "service": {
+      "entropy": "bFccLcQruUVcM0NxQ96vnVjZ",
+      "hostname": "mirayxs.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.0"
+  },
+  "ctime": 1597262923,
+  "expire_in": 504576000,
+  "prev": "dae33d290da85f37e967738ea263937c119c107017efc65a29b408508567d3d0",
+  "seqno": 11,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEglUP+g4Ol0Gxalu0JCM6hN8Vg637NN6xzDKFd6t7aMCUKp3BheWxvYWTESpcCC8Qg2uM9KQ2oXzfpZ3OOomOTfBGcEHAX78ZaKbQIUIVn09DEIAcR0bgS59E3SbDo6X9Czisnhsl4r55m6MUzhOM2pWLPAgHCo3NpZ8RALwbOUcd6vu2ppnLOAJ9+we8aO8QAC0596MMIR/meIa3nAgO7eL8w4RUWHPqW6wKcuMiNpno79ArWuc95ntdZCahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIPJ6buLaebwvhlkwF59oITcV0xaL4s6hC7Y3Yn6ItagLo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mirayxs
+
+==================================================================
